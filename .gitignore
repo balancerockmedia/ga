@@ -1,2 +1,3 @@
 .DS_Store
-job-board-sass/.sass-cache
+.sass-cache
+bower_components
