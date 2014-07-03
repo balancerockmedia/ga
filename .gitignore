@@ -1,3 +1,4 @@
 .DS_Store
-.sass-cache
+job-board-sass/.sass-cache
+job-board-bootstrap/.sass-cache
 bower_components
