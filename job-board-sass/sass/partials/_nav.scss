@@ -1,19 +1,19 @@
 header ul {
     float: right;
     list-style: none;
-}   
-
-header li {
-    float: left;
-    margin-left: 40px;
-}
-
-header a {
-    color: $white;
-    font: 12px arial;
-    text-decoration: none;
-}
-
-header a:hover {
-    text-decoration: underline;
+    
+    li {
+        float: left;
+        margin-left: 40px;
+        
+        a {
+            color: $white;
+            font: 12px arial;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
