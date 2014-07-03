@@ -1,0 +1,38 @@
+#search-results {
+    float: left;
+    width: 600px;
+    margin: 15px 0;
+    padding-left: 10px;
+}
+
+#search-results-table {
+    width: 600px;
+    margin-top: 20px;
+}
+
+#search-results-table th {
+    font: bold 12px arial;
+    color: $darkText;
+    border-bottom: 2px solid $accentLine;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#search-results-table td {
+    font: 12px arial; 
+    color: $darkText;
+    padding-top: 20px;
+}
+
+#search-results-table td.view {
+    text-align: right;
+}
+
+.view a {
+    display: inline-block;
+    background: $secondaryBtnBg;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: $white;
+    text-decoration: none;
+}

@@ -1,0 +1,35 @@
+#contact {
+    float: left;
+    width: 300px;
+    margin: 15px 0 0 20px;
+}
+
+#contact-form label {
+    font: 12px arial;
+    color: $darkText;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#contact-form input[type="text"], 
+#contact-form textarea {
+    border: none;
+    background: $formFieldBg;
+    padding: 8px;
+    width: 284px;
+    border-radius: 5px;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background: $primaryBtnBg;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    color: $white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

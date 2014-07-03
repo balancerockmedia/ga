@@ -37,54 +37,6 @@ body {
   padding: 10px;
   border-radius: 5px; }
 
-#search {
-  border-radius: 5px;
-  padding: 20px 10px 30px;
-  background: #809ead;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #809ead 0%, #466f82 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #809ead), color-stop(100%, #466f82));
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #809ead 0%, #466f82 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #809ead 0%, #466f82 100%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #809ead 0%, #466f82 100%);
-  /* IE10+ */
-  background: radial-gradient(ellipse at center, #809ead 0%, #466f82 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$bgGradientLight', endColorstr='#466f82',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
-
-#search-results {
-  float: left;
-  width: 600px;
-  margin: 15px 0;
-  padding-left: 10px; }
-
-#contact {
-  float: left;
-  width: 300px;
-  margin: 15px 0 0 20px; }
-
-/* navigation */
-header ul {
-  float: right;
-  list-style: none; }
-
-header li {
-  float: left;
-  margin-left: 40px; }
-
-header a {
-  color: white;
-  font: 12px arial;
-  text-decoration: none; }
-
-header a:hover {
-  text-decoration: underline; }
-
 /* headers */
 h2 {
   text-transform: uppercase;
@@ -114,7 +66,27 @@ p {
 #search-term strong {
   font-weight: bold; }
 
-/* contact form */
+header ul {
+  float: right;
+  list-style: none; }
+
+header li {
+  float: left;
+  margin-left: 40px; }
+
+header a {
+  color: white;
+  font: 12px arial;
+  text-decoration: none; }
+
+header a:hover {
+  text-decoration: underline; }
+
+#contact {
+  float: left;
+  width: 300px;
+  margin: 15px 0 0 20px; }
+
 #contact-form label {
   font: 12px arial;
   color: #231f20;
@@ -141,7 +113,26 @@ button[type="submit"] {
   font-weight: bold;
   letter-spacing: 1px; }
 
-/* search form */
+#search {
+  border-radius: 5px;
+  padding: 20px 10px 30px;
+  background: #809ead;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #809ead 0%, #466f82 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #809ead), color-stop(100%, #466f82));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #809ead 0%, #466f82 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #809ead 0%, #466f82 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #809ead 0%, #466f82 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #809ead 0%, #466f82 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$bgGradientLight', endColorstr='#466f82',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
 #search-form p {
   float: left;
   margin: 0 25px 0 0; }
@@ -162,7 +153,12 @@ button[type="submit"] {
   width: 284px;
   border-radius: 5px; }
 
-/* search results table */
+#search-results {
+  float: left;
+  width: 600px;
+  margin: 15px 0;
+  padding-left: 10px; }
+
 #search-results-table {
   width: 600px;
   margin-top: 20px; }
@@ -189,19 +185,3 @@ button[type="submit"] {
   border-radius: 4px;
   color: white;
   text-decoration: none; }
-
-header ul {
-  float: right;
-  list-style: none; }
-
-header li {
-  float: left;
-  margin-left: 40px; }
-
-header a {
-  color: white;
-  font: 12px arial;
-  text-decoration: none; }
-
-header a:hover {
-  text-decoration: underline; }
