@@ -413,13 +413,6 @@ p {
   color: #231f20;
   margin-bottom: 10px; }
 
-#search-term {
-  font: 13px arial;
-  color: #767769;
-  margin-bottom: 10px; }
-  #search-term strong {
-    font-weight: bold; }
-
 header ul {
   float: right;
   list-style: none; }
@@ -499,6 +492,13 @@ header ul {
   padding: 8px;
   width: 284px;
   border-radius: 5px; }
+
+#search-term {
+  font: 13px arial;
+  color: #767769;
+  margin-bottom: 10px; }
+  #search-term strong {
+    font-weight: bold; }
 
 #search-results {
   float: left;

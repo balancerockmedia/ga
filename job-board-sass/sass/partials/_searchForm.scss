@@ -36,3 +36,13 @@
     width: 284px;
     border-radius: 5px;
 }
+
+#search-term {
+    font: 13px arial;
+    color: $accentText;
+    margin-bottom: 10px;
+    
+    strong {
+        font-weight: bold;
+    }
+}

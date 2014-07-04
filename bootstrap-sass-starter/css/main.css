@@ -249,8 +249,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("bootstrap/glyphicons-halflings-regular.eot");
+  src: url("bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 1px;
@@ -5288,9 +5288,3 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-body {
-  padding-top: 50px; }
-
-.starter-template {
-  padding: 40px 15px;
-  text-align: center; }
