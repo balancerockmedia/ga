@@ -1,0 +1,12 @@
+#container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#thumbs img {
+    height: 100px;
+}
+
+#thumbs img.active {
+    border: 1px solid red;
+}
