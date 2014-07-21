@@ -153,6 +153,10 @@ button[type="submit"] {
     letter-spacing: 1px;
 }
 
+.invalid {
+    border: 1px solid red !important;
+}
+
 /* search form */
 #search-form p {
     float: left;
