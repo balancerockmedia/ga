@@ -19,12 +19,12 @@ $(function() {
         }
         
         if (error === 1) {
-			alert('Oops! Please fill out the highlighted fields and try again...');
+            alert('Oops! Please fill out the highlighted fields and try again...');
             
-			return false;
-		} else {
-			return true;
-		}
+            return false;
+        } else {
+            return true;
+        }
     });
     
     $('input[name="name"], input[name="email"], textarea[name="comments"]').on('focus', function() {
