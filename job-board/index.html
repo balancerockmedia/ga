@@ -5,8 +5,6 @@
 <title>Job Board</title>
 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="css/main.css" />
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/main.js"></script>
 </head>
 <body>
     
@@ -90,13 +88,13 @@
         
             <form id="contact-form" method="post" action="#">
                 <p><label for="name">Name:</label>
-                <input type="text" id="name" name="name" /></p>
+                <input type="text" id="name" name="name" required /></p>
                 
                 <p><label for="email">Email Address:</label>
-                <input type="text" id="email" name="email" /></p>
+                <input type="email" id="email" name="email" required /></p>
                 
                 <p><label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="10" cols="50"></textarea></p>
+                <textarea id="comments" name="comments" rows="10" cols="50" required></textarea></p>
                 
                 <p><button type="submit" name="submit">SUBMIT</button></p>
             </form>

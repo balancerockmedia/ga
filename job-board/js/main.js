@@ -10,11 +10,13 @@ $(function() {
         
         if ($('input[name="email"]').val() === '') {
             $('input[name="email"]').addClass('invalid');
+            
             error = 1;
         }
         
         if ($('textarea[name="comments"]').val() === '') {
             $('textarea[name="comments"]').addClass('invalid');
+            
             error = 1;
         }
         

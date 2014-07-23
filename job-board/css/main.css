@@ -131,6 +131,7 @@ p {
 }
 
 #contact-form input[type="text"],
+#contact-form input[type="email"],
 #contact-form textarea {
     border: none;
     background: #e1e9ee;

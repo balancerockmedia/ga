@@ -86,6 +86,8 @@
                     </tr>
                 </tbody>
             </table>
+            
+            <p><a href="#" class="btn btn-default btn-primary" id="addJobLink">Add Job</a></p>
         </div>
         
         <div class="col-md-4">
@@ -113,8 +115,88 @@
     </div>
 </div>
 
+<div class="modal fade" id="viewJobModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Job Details</h4>
+      </div>
+      <div class="modal-body">
+        <p>Job details go here</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addJobModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add Job</h4>
+      </div>
+      <div class="modal-body">
+          <form role="form">
+              <div class="form-group">
+                  <label for="location">Location:</label>
+                  <input type="text" class="form-control" id="location" required>
+              </div>
+              
+              <div class="form-group">
+                  <label for="description">Description:</label>
+                  <textarea class="form-control" id="description" required></textarea>
+              </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+    $('tbody a').on('click', function() {
+        $('#viewJobModal').modal('show');
+    });
+    
+    $('#addJobLink').on('click', function() {
+        $('#addJobModal').modal('show');
+    });
+    
+    $('#addJobModal .btn-primary').on('click', function(e) {
+        e.preventDefault();
+        
+        var location = $('#location').val();
+        var description = $('#description').val();
+        
+        var newRow = '<tr>';
+        
+        newRow += '<td>'+location+'</td>';
+        newRow += '<td>'+description+'</td>';
+        newRow += '<td><a href="#" class="btn btn-default btn-xs">View Now</a></td>';
+        
+        newRow += '</tr>';
+        
+        $('tbody').append(newRow);
+        
+        $('#addJobModal').modal('hide');
+        
+        $('#location, #description').val('');
+    });
+});
+
+</script>
     
 </body>
 </html>
