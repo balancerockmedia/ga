@@ -6,7 +6,16 @@
 </head>
 <body>
 
-<div id="container"></div>
+<div id="posts"></div>
+
+<div id="formContainer">
+    <form action="http://localhost:3000/contact" method="post">
+        <p>Name: <input type="text" name="name"></p>
+        <p>Email: <input type="email" name="email"></p>
+
+        <p><input type="submit" name="submit"></p>
+    </form>
+</div>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/app.js"></script>
