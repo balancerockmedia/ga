@@ -1,7 +1,6 @@
 var jobBoard = {
     init: function() {
         $.getJSON('http://localhost:3000/jobs').done(function(response) {
-            
             $.each(response.jobs, function() {
                 $('#posts').append('<h2>' + this.title + '</h2>');
                 $('#posts').append('<p>' + this.description + '</p>');
