@@ -1,0 +1,22 @@
+#container {
+    width: 2000px;
+    height: 1000px;
+}
+
+#shape1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    top: 100px;
+    left: 400px;
+}
+
+#shape2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    top: 300px;
+    left: 400px;
+}
