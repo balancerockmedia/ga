@@ -2,6 +2,12 @@ $(window).load(function() {
     var position = 0;
     var img_width = $('.gallery img:first').width();
     
+    /*setInterval(function() {
+        $('.gallery').animate({
+            'margin-left': '-='+img_width+'px'
+        });
+    }, 2000);*/
+    
     $('#leftButton').on('click', function() {
     //$('.gallery').on('swipeleft', function() {
         if ($('.gallery').is(':animated')) {
